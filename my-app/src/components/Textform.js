@@ -8,7 +8,7 @@ export default function Textform(props) {
 
 
   const handleUpClick =()=>{
-    if(text.length==0)
+    if(text.length===0)
       props.showAlert("Please enter text","warning")
   
     else
@@ -19,7 +19,7 @@ export default function Textform(props) {
       
   }
   const handleLowClick =()=>{
-    if(text.length==0)
+    if(text.length===0)
       props.showAlert("Please enter text","warning")
   
     else
@@ -29,7 +29,7 @@ export default function Textform(props) {
     props.showAlert("Converted to lowercase","success")
   }}
   const handleClearClick =()=>{
-    if(text.length==0)
+    if(text.length===0)
       props.showAlert("Please enter text","warning")
   
     else
@@ -42,7 +42,7 @@ export default function Textform(props) {
   const handleCopy=()=>{
     //var text=document.querySelector("#exampleFormControlTextarea1")
     //text.select();
-    if(text.length==0)
+    if(text.length===0)
       props.showAlert("Please enter text","warning")
   
     else
@@ -52,7 +52,7 @@ export default function Textform(props) {
   }
 
  const handleExtraSpaces=()=>{
-  if(text.length==0)
+  if(text.length===0)
       props.showAlert("Please enter text","warning")
   
     else
